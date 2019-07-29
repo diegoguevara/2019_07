@@ -440,8 +440,9 @@ video, .video{
 
 .p-o-recommended-section {
     display: flex;
-    min-height: 372px;
-    background: #D8D9DD;
+    min-height: 100px;
+    /* background: #D8D9DD; */
+    background: #000;
 }
 
 .p-o-recommended-section > div {
@@ -450,28 +451,45 @@ video, .video{
 }
 
 .p-o-recommended-section > div > a {
-    flex: 1 0 320px;
-    max-width: 320px;
+    flex: 1 0 160px;
+    max-width: 160px;
     display: flex;
     flex-direction: column;
-    background: #444242;
+    /* background: #444242; */
+    background: #fff;
     overflow: hidden;
     text-decoration: none;
+}
+
+@media (max-width: 1109px) {
+    .p-o-recommended-section > div {
+        flex-wrap: wrap;
+        justify-content: unset;
+    }
+    .p-o-recommended-section > div > a {
+        flex-grow: 1;
+        min-width: 100%;
+    }
+}
+
+.p-o-recommended-section > div > a > div:nth-child(1) > img{
+    width: 100%;
 }
 
 .p-o-recommended-section > div > a:hover > div > p:nth-child(1) {
     text-decoration: underline;
 }
 
-.p-o-recommended-section > div > a:nth-child(1) {
-    margin-right: 10px;
+.p-o-recommended-section > div > a {
+    margin-right: 4px;
 }
-.p-o-recommended-section > div > a:nth-child(2) {
-    margin-right: 10px;
+.p-o-recommended-section > div > a:last-child {
+    margin-right: 0px;
 }
 
 .p-o-recommended-section > div > a > div:nth-child(2) {
-    color: #fff;
+    color: #444242;
+    /* color: #fff; */
     padding: 10px;
     min-height: 90px;
 } 
@@ -495,11 +513,19 @@ video, .video{
 }
 
 .p-o-region-section > div > div > p {
-    height: 43px;
+    min-height: 43px;
+}
+
+.p-o-region-section > div > div > p:nth-child(1)  {
+
+    color: #444242;
+    background: #d8d9dd;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .p-o-region-section > div > div > p > a {
-    color: #fff;
+    color: #444242;
     text-decoration: none;
     font-size: 18px;
 }
@@ -512,12 +538,34 @@ video, .video{
     margin-bottom: 10px; 
 }
 
-.p-o-region-section > div > div > p:nth-child(2) {
+.p-o-region-section > div > div > p:nth-child(2), .p-o-region-section > div > div > div > p {
     color: #fff;
     margin-top: 0px;
     margin-bottom: 30px;
     font-family: 'Roboto Light';
     font-size: 12px;
+}
+
+.p-o-region-section > div > div > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    min-height: 45px;
+}
+
+.p-o-region-section > div > div > div:nth-child(1) > div:nth-child(1) {
+    width: 32px;
+}
+
+.p-o-region-section > div > div > div:nth-child(1) > div:nth-child(2) > a {
+    /*link*/
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    display: block;
+}
+
+.p-o-region-section > div > div > div:nth-child(1) > div:nth-child(2) > a:hover {
+    text-decoration: underline;
 }
 
 /* REPORT SECTION */
