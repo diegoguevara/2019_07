@@ -292,6 +292,89 @@ header > div > div:nth-child(3) {
     max-height: 120px;
 }
 
+/* SECTIO VIDEOS */
+.p-o-videos-section {
+    background: #000;
+}
+
+ .p-o-videos-section > div  {
+    background: #000;
+}
+
+.p-o-videos-section > div > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.p-o-videos-section > div > div:nth-child(1) > div:nth-child(1) {
+    position: relative;
+    padding-bottom: 46.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+    
+.p-o-videos-section > div > div:nth-child(1) > div:nth-child(1) > iframe,
+.p-o-videos-section > div > div:nth-child(1) > div:nth-child(1) > object,
+.p-o-videos-section > div > div:nth-child(1) > div:nth-child(1) > embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 430px;
+}
+
+.p-o-videos-section > div > div:nth-child(1) > div:nth-child(2) {
+    margin-top: 50px;
+    color: #fff;
+}
+
+.p-o-videos-section > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+    color: #E4A122;
+}
+
+.p-o-videos-section > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Light';
+    font-size: 13px;
+}
+
+.p-o-videos-section > div > div:nth-child(2) {
+    width: 350px;
+}
+
+.p-o-videos-section > div > div:nth-child(2) > div:nth-child(1) {
+    background: #302F2F;
+    padding: 20px;
+    color: #E4A122;
+}
+
+.p-o-videos-section > div > div:nth-child(2) > div.video_item {
+    background: #000;
+    color: #fff;
+    font-family: 'Roboto Light';
+    font-size: 13px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer !important;
+}
+
+.p-o-videos-section > div > div:nth-child(2) > div.video_item > div:nth-child(1) {
+    flex: 1;
+}
+
+.p-o-videos-section > div > div:nth-child(2) > div.video_item > div:nth-child(2) {
+    max-width: 140px;
+}
+
+.p-o-videos-section > div > div:nth-child(2) > div.video_item > div:nth-child(2):hover {
+    opacity: .5;
+}
+
 /* VIDEO */
 
 .p-o-video {
@@ -678,6 +761,51 @@ video, .video{
     background: #fcbc44;
     text-decoration: underline;
 }
+
+
+/* VIDEOS WHITE SECTION */
+
+.p-o-videos-white-section {
+    min-height: 345px;
+    background: #D8D9DD;
+    display: flex;
+}
+
+.p-o-videos-white-section > div > div {
+    flex: 1 0 230px;
+    margin: 10px;
+    background: #302F2F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.p-o-videos-white-section > div > div > div:nth-child(1){ 
+    margin-bottom: 20px;
+}
+
+.p-o-videos-white-section > div > div > div > img{ 
+    /* max-height: 55px; */
+}
+
+.p-o-videos-white-section > div > div > div:nth-child(2) > p:nth-child(1) { 
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.p-o-videos-white-section > div > div > div:nth-child(2) > p:nth-child(2){ 
+    color: #fff;
+    font-family: 'Roboto Light';
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 
 /* FOOTER SECTION */
 
