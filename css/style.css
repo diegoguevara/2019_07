@@ -299,12 +299,14 @@ header > div > div:nth-child(3) {
 
  .p-o-videos-section > div  {
     background: #000;
+    flex-wrap: wrap;
 }
 
 .p-o-videos-section > div > div:nth-child(1) {
     display: flex;
     flex-direction: column;
     flex: 1;
+    min-width: 600px;
 }
 
 .p-o-videos-section > div > div:nth-child(1) > div:nth-child(1) {
@@ -343,7 +345,9 @@ header > div > div:nth-child(3) {
 }
 
 .p-o-videos-section > div > div:nth-child(2) {
-    width: 350px;
+    /* width: 100%; */
+    min-width: 350px;
+    flex: 1;
 }
 
 .p-o-videos-section > div > div:nth-child(2) > div:nth-child(1) {
